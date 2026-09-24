@@ -11,6 +11,5 @@ module "ec2" {
   instance_type = "t3.micro"
   subnet_id = module.vpc.subnet_id
   environment = "dev"
-  instance_name = "dev-instance"
   instance_count = 1
 }
