@@ -16,7 +16,7 @@ pipeline {
     stage('Terraform Init') {
       steps {
         dir("${TF_WORKDIR}") {
-          sh 'terraform init -reconfigure'
+          sh 'terraform init'
         }
       }
     }
